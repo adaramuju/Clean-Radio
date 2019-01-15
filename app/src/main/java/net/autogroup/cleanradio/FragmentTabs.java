@@ -59,9 +59,10 @@ public class FragmentTabs extends Fragment implements IFragmentRefreshable, IFra
         final TabLayout tabLayout = (TabLayout) x.findViewById(R.id.tabs);
         viewPager = (ViewPager) x.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
+        /*
         AdView mAdView = x.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
 
         if (searchQuery != null) {
             Search(searchQuery);

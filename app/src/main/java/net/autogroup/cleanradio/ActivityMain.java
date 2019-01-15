@@ -118,6 +118,10 @@ public class ActivityMain extends AppCompatActivity implements SearchView.OnQuer
         setContentView(R.layout.layout_main);
         MobileAds.initialize(this, "ca-app-pub-1851158852084319~7574742070");
 
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         try {
             File dir = new File(getFilesDir().getAbsolutePath());
             if (dir.isDirectory()) {

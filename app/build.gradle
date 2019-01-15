@@ -15,15 +15,15 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
 
-        versionCode 79
-        versionName "0.69"
+        versionCode 1
+        versionName "1.0.0"
 
         vectorDrawables.useSupportLibrary = true
 
         // Define your application name here.
         // It must neither be present in /res/values/strings.xml
         // nor in /res/values/string_no_translate.xml
-        resValue 'string', 'app_name_untranslated', 'RadioDroid'
+        resValue 'string', 'app_name_untranslated', 'Clean Radio'
     }
 
     sourceSets {

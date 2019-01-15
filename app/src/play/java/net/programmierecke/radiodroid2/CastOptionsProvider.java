@@ -1,4 +1,4 @@
-package net.programmierecke.radiodroid2;
+package net.autogroup.cleanradio;
 
 import android.content.Context;
 

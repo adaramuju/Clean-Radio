@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="net.programmierecke.radiodroid2">
+    package="net.autogroup.cleanradio">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -11,13 +11,18 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:name=".RadioDroidApp"
+        android:name="net.autogroup.cleanradio.RadioDroidApp"
         android:allowBackup="false"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1851158852084319~7574742070"/>
+
         <provider
-            android:authorities="net.programmierecke.radiodroid2.fileprovider"
+            android:authorities="net.autogroup.cleanradio.fileprovider"
             android:name="android.support.v4.content.FileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -27,7 +32,7 @@
         </provider>
 
         <activity
-            android:name=".ActivityMain"
+            android:name="net.autogroup.cleanradio.ActivityMain"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>
@@ -42,14 +47,14 @@
             <!--</intent-filter>-->
         </activity>
         <service
-            android:name="net.programmierecke.radiodroid2.PlayerService">
+            android:name="net.autogroup.cleanradio.PlayerService">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </service>
 
         <service
-            android:name="net.programmierecke.radiodroid2.RadioDroidBrowserService"
+            android:name="net.autogroup.cleanradio.RadioDroidBrowserService"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -58,11 +63,11 @@
         </service>
 
         <activity
-            android:name=".ActivityRadioStationDetail"
+            android:name="net.autogroup.cleanradio.ActivityRadioStationDetail"
             android:label="Station" />
 
         <receiver
-            android:name="net.programmierecke.radiodroid2.AlarmReceiver"
+            android:name="net.autogroup.cleanradio.AlarmReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name=".AlarmReceiver" />
@@ -76,7 +81,7 @@
         </receiver>
 
         <receiver
-            android:name="net.programmierecke.radiodroid2.BootReceiver"
+            android:name="net.autogroup.cleanradio.BootReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

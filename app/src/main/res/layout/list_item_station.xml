@@ -51,15 +51,16 @@
                 android:layout_height="30dp"
                 android:layout_gravity="top|start"
                 android:scaleType="fitCenter"
+                android:visibility="gone"
                 app:srcCompat="@drawable/ic_trending_flat_black_24dp" />
 
             <ImageView
-                    android:id="@+id/starredStatusIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="top|end"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_star_transparent_with_border_24dp" />
+                android:id="@+id/starredStatusIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|end"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_star_yello" />
 
         </FrameLayout>
 
@@ -105,16 +106,17 @@
         </LinearLayout>
 
         <ImageButton
-                android:id="@+id/buttonMore"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/image_button_more"
-                android:minWidth="50dp"
-                android:padding="5dp"
-                android:tint="?attr/iconsInItemBackgroundColor"
-                app:srcCompat="@drawable/ic_expand_more_black_24dp" />
+            android:id="@+id/buttonMore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/image_button_more"
+            android:minWidth="50dp"
+            android:padding="5dp"
+            android:tint="?attr/iconsInItemBackgroundColor"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_expand_more_black_24dp" />
     </LinearLayout>
 
     <ViewStub

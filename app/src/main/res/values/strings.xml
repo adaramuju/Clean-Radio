@@ -11,7 +11,8 @@
     <string name="detail_stop">Stop</string>
     <string name="detail_share">Share</string>
 
-    <string name="action_local">Local</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_local">Recommended</string>
     <string name="action_pause">Pause</string>
     <string name="action_resume">Resume</string>
     <string name="action_stop">Stop</string>
@@ -216,7 +217,7 @@
 
     <string name="media_route_menu_title">GoogleCast</string>
     <string name="app_id">5A97BAE4</string>
-    <string name="app_name">RadioDroid</string>
+    <string name="app_name">Clean Radio</string>
 
     <string name="settings_mpd">Music Player Daemon</string>
     <string name="settings_view_mpd_servers">Your servers</string>
@@ -229,7 +230,7 @@
 
     <string name="settings_other">Other</string>
     <string name="settings_statistics">Statistics</string>
-    <string name="settings_about">About RadioDroid</string>
+    <string name="settings_about">About CleanRadio</string>
 
     <string-array name="weekdays">
         <item>S</item>

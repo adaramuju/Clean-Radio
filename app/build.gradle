@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "net.programmierecke.radiodroid2"
+        applicationId "net.autogroup.cleanradio"
         minSdkVersion 15
         targetSdkVersion 26
 
@@ -67,8 +67,8 @@ dependencies {
     implementation 'com.github.rustamg:file-dialogs:1.0'
     playImplementation 'com.google.android.gms:play-services-cast:16.1.0'
     playImplementation 'com.google.android.gms:play-services-cast-framework:16.1.0'
+    implementation 'com.google.android.gms:play-services-ads:17.1.1'
 }
-
 
 // https://stackoverflow.com/questions/24649240/build-release-apk-with-customize-name-format-in-android-studio
 // https://stackoverflow.com/questions/32092665/resolve-application-label-for-each-build-type/32220436#32220436
